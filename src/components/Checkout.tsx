@@ -1,3 +1,3 @@
-export const Checkout = () => <div data-test-id="ordering-checkout">Checkout</div>
+const Checkout = () => <div data-test-id="ordering-checkout">Checkout</div>
 
-// default Checkout
+export default Checkout

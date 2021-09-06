@@ -1,3 +1,3 @@
-export * from "./Checkout"
-export * from "./Home"
-export * from "./ComingSoon"
+export { default as Checkout } from "./Checkout"
+export { default as Home } from "./Home"
+export { default as ComingSoon } from "./ComingSoon"

@@ -1,3 +1,3 @@
-export const Home = () => <div data-test-id="ordering-home">Home</div>
+const Home = () => <div data-test-id="ordering-home">Home</div>
 
-// export default Home
+export default Home
