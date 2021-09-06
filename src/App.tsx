@@ -7,6 +7,7 @@ const CheckoutPage = lazy(() => import('./components/Checkout'))
 const ComingSoonPage = lazy(() => import('./components/ComingSoon'))
 
 const Loading = () => <div>Loading...</div>
+
 function App() {
   return (
     <div className="App">

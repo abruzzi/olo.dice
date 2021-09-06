@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# olo.dice
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple project to demonstrate how to use `reach/router` and react lazy load. Also you may have noticed that this project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## What's proven
+
+- `export *` will confuse tree shaking
+- `reach/router` works well with lazy load API
 
 ## Available Scripts
 
