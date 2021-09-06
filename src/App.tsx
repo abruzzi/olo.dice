@@ -1,17 +1,22 @@
-import React from 'react';
+import React, {lazy, Suspense} from 'react';
 import './App.css';
-import {RouteComponentProps, Router} from '@reach/router'
+import {Router} from '@reach/router'
 
-import { Home } from './components'
+const HomePage = lazy(() => import('./components/Home'))
+const CheckoutPage = lazy(() => import('./components/Checkout'))
+const ComingSoonPage = lazy(() => import('./components/ComingSoon'))
 
-const HomePage = (props: RouteComponentProps) => <Home />
-
+const Loading = () => <div>Loading...</div>
 function App() {
   return (
     <div className="App">
-      <Router>
-        <HomePage path={'/'} default />
-      </Router>
+        <Suspense fallback={<Loading />}>
+            <Router>
+                <HomePage path={'/'} default />
+                <CheckoutPage path={'/checkout'} />
+                <ComingSoonPage path={'/coming-soon'} />
+            </Router>
+        </Suspense>
     </div>
   );
 }

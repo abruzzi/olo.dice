@@ -1,3 +1,5 @@
-const Checkout = () => <div data-test-id="ordering-checkout">Checkout</div>
+import {RouteComponentProps} from "@reach/router";
+
+const Checkout = (props: RouteComponentProps) => <div data-test-id="ordering-checkout">Checkout</div>
 
 export default Checkout
